@@ -1,0 +1,101 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #444; /* Darker text color for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Content Styling */
+main.content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #7c4dff; /* Soft Dark Purple */
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Table Header Styling */
+th {
+    background-color: #7c4dff; /* Soft Dark Purple */
+    color: white;
+    font-size: 16px;
+}
+
+td {
+    background-color: #f9f9f9; /* Light Gray for table data */
+    color: #555;
+}
+
+/* Hover Effect for Rows */
+tr:hover {
+    background-color: #f0e7ff; /* Light Purple when hovering over a row */
+}
+
+/* Button Styling */
+button {
+    background-color: #7c4dff; /* Soft Dark Purple */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #5e35b1; /* Darker purple on hover */
+}
+
+/* Link Styling (for delete button) */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5e35b1; /* Darker purple when hovered */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    main.content {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}

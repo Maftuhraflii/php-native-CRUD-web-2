@@ -1,0 +1,37 @@
+/* Container untuk tombol logout, agar tetap di pojok kanan atas */
+.logout-container {
+    position: fixed;  /* Agar tombol tetap di tempat meski halaman digulir */
+    top: 20px;        /* Jarak dari atas */
+    right: 20px;      /* Jarak dari kanan */
+    z-index: 1000;    /* Menjamin tombol tetap di atas konten lain */
+}
+
+/* Styling untuk tombol logout */
+.logout-btn {
+    background-color: #d32f2f; /* Warna merah tua */
+    color: white;
+    padding: 12px 30px; /* Memberikan ruang di sekitar teks */
+    border: none;
+    border-radius: 8px; /* Membuat sudut tombol bulat */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efek hover untuk tombol */
+.logout-btn:hover {
+    background-color: #c62828; /* Merah lebih gelap saat hover */
+    transform: scale(1.05); /* Memberikan efek pembesaran sedikit saat di-hover */
+}
+
+/* Efek fokus untuk tombol */
+.logout-btn:focus {
+    outline: none; /* Menghilangkan outline default saat tombol difokuskan */
+    box-shadow: 0 0 10px rgba(211, 47, 47, 0.8); /* Memberikan efek bayangan merah saat tombol difokuskan */
+}
+
+/* Efek aktif pada tombol saat ditekan */
+.logout-btn:active {
+    background-color: #b71c1c; /* Merah lebih gelap saat ditekan */
+    transform: scale(1); /* Mengembalikan ukuran tombol ke normal saat ditekan */
+}

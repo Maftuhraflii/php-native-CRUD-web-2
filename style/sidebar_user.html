@@ -1,0 +1,64 @@
+/* Reset dasar dan styling umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('img/bunga1.jpg') no-repeat center center fixed; /* Menggunakan gambar wallpaper */
+    background-size: cover; /* Membuat gambar latar belakang menutupi seluruh halaman */
+    color: #333333; /* Teks berwarna abu-abu gelap */
+    line-height: 1.6;
+}
+
+/* Container untuk seluruh halaman */
+.container {
+    display: flex;
+    min-height: 100vh;
+    position: relative; /* Pastikan elemen ini berada di atas background */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: linear-gradient(180deg, #AF84BD, #9E6AA7); /* Gradien ungu untuk sidebar */
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0 15px 15px 0; /* Membuat sudut lebih elegan */
+}
+
+.sidebar .logo h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #FFD700; /* Warna emas pada logo untuk kesan mewah */
+}
+
+.sidebar .nav {
+    list-style: none;
+}
+
+.sidebar .nav li {
+    margin: 15px 0;
+}
+
+.sidebar .nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .nav li a:hover {
+    background-color: #9E6AA7;
+    background-color: rgba(158, 106, 167, 0.8); /* Efek transparan saat hover */
+}
